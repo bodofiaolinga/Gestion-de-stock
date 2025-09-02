@@ -2,20 +2,21 @@ package com.bodif.GestiondeStock.model;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
-@Data
+
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "Article")
 public class Article extends AbstractEntity {
+
+
 
     private String CodeArticle;
 
@@ -32,4 +33,6 @@ public class Article extends AbstractEntity {
     @ManyToOne
     @JoinColumn(name="idCategory")
     private Category category;
+
+
 }

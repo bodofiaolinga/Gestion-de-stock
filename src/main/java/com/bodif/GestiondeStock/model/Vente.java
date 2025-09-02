@@ -2,10 +2,9 @@ package com.bodif.GestiondeStock.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import java.time.Instant;
 
 @Data
 @NoArgsConstructor
@@ -15,7 +14,9 @@ import lombok.NoArgsConstructor;
 @Table(name = "Vente")
 public class Vente extends AbstractEntity{
 
-    // FIXME
-
     private String code;
+
+    private Instant dateVente;
+
+    private String commentaire;
 }
