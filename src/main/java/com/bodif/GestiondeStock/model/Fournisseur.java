@@ -29,6 +29,7 @@ public class Fournisseur extends AbstractEntity{
     private String mail;
 
     private String numtel;
+    private Integer idEntreprise;
 
     @OneToMany(mappedBy = "fournisseur")
     private List<CommandeFournisseur>commandeFournisseurs;

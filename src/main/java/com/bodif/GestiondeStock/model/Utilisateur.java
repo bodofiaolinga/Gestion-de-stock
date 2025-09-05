@@ -30,6 +30,7 @@ public class Utilisateur extends AbstractEntity {
 
     private String photo;
 
+
     @ManyToOne
     @JoinColumn(name = "identreprise")
     private Entreprise entreprise;

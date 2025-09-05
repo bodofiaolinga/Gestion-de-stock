@@ -30,6 +30,8 @@ public class Article extends AbstractEntity {
 
     private String Photo;
 
+    private Integer idEntreprise;
+
     @ManyToOne
     @JoinColumn(name="idCategory")
     private Category category;

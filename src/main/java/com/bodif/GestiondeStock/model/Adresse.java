@@ -15,4 +15,5 @@ public class Adresse {
     private String ville;
     private String codepostale;
     private String pays;
+    private Integer idEntreprise;
 }
